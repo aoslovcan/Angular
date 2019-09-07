@@ -1,0 +1,26 @@
+
+<h2>Knjižnica</h2>
+<div class="card"  *ngFor="let elem of knjige ">
+    <img src="{{elem.imgPath}}" 
+    class="card-img-top"  alt="{{elem.naslov}}"
+    style="max-height:350px">
+    
+    <div class="card-body">
+      <h5 class="card-title">{{elem.naslov}}</h5>
+      
+    </div>
+    
+    <div class="card-body">
+      <button
+      class="btn btn-danger"
+      (click)="OnAdd(elem)">
+      Više...
+     
+      </button>
+      
+    </div>
+   
+  </div>
+
+
+

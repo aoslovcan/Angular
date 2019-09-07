@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<app-header (featuredSelected)="onNavigate($event)"></app-header>
+<main class="bg-dark">
+
+        <app-section-one *ngIf="loadedFeature === 'section-one'"></app-section-one>
+       
+       
+</main>
+
+<app-setion-two *ngIf="loadedFeature === 'setion-two'"></app-setion-two>
+
+<app-event-binding *ngIf="loadedFeature === 'event-binding'"></app-event-binding>
+
+<app-footer></app-footer>
+
+

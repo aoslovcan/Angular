@@ -1,0 +1,14 @@
+<div class="container">
+    <app-popis-knjiga
+    (odabranaknjiga)="odaberiKnjigu = $event"
+    ></app-popis-knjiga>
+    
+
+</div>
+<div class="container">
+        <app-edit-knjiga
+        *ngIf="odaberiKnjigu" 
+        [knjige]="odaberiKnjigu"
+        ></app-edit-knjiga>
+</div>
+

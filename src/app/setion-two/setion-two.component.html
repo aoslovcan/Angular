@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+           <h2>Serije</h2>
+           <label>Naziv</label>
+           <input type="text" class="form-control" [(ngModel)]="nazivSerije">
+          
+           <label>Žanr</label>
+           <input type="text" class="form-control" [(ngModel)]="zanrSerije">
+           <label>Broj sezona</label>
+           <input type="number" class="form-control" [(ngModel)]="brEpizoda" >
+           <label>Unesi sliku</label>
+           <input type="text" class="form-control" [(ngModel)]="imgpath" >
+           
+           <br>
+       
+           <button class="btn btn-primary"
+           (click)="AddSeries()">Dodaj seriju</button>
+       </div>
+       </div>
+       
+</div>
+<br>
+<hr>
+<app-serije *ngFor="let serija of serije"
+[serijaElement]="serija"></app-serije>

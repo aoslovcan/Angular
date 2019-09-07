@@ -1,0 +1,19 @@
+.list-group {
+    flex-direction: unset;
+    flex-wrap: wrap;
+  
+    
+    
+}
+.list-group-item{
+    margin-right:0.1%;
+    width:49%;
+    border-radius: 1%;
+    background-color: aquamarine;
+    color:white;
+}
+.container{
+
+    
+    height: 100%;
+}
